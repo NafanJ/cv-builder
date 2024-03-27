@@ -1,16 +1,22 @@
 import "../styles/PersonalDetailsSection.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faPhone, faLocationDot } from '@fortawesome/free-solid-svg-icons';
+
 function PersonalDetailsSection({email, fullName, phoneNumber, address }) {
   return (
     <div className="personal-info">
       <h1 className="resume-name">{fullName}</h1>
       <div className="contact-info">
         <div>
+            <FontAwesomeIcon icon={faEnvelope} />
             <span>{email}</span>
         </div>
         <div>
+            <FontAwesomeIcon icon={faPhone} />
             <span>{phoneNumber}</span>
         </div>
         <div>
+            <FontAwesomeIcon icon={faLocationDot} />
             <span>{address}</span>
         </div>
       </div>

@@ -13,3 +13,8 @@
     justify-content: center;
     gap: 1rem;
 }
+
+.contact-info > div{
+    display: flex;
+    gap: 6px;
+}
