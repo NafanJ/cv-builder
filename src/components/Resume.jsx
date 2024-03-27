@@ -1,9 +1,9 @@
 import PersonalDetailsSection from './PersonalDetailsSection.jsx'
+import "../styles/Resume.css";
 
 function Resume(personalInfo, educationDetails, professionalExperience) {
     return (
     <div className="resume-container">
-        <h1>Resume</h1>  
         <PersonalDetailsSection
             fullName={personalInfo.personalDetails.fullName}
             email={personalInfo.personalDetails.email}
