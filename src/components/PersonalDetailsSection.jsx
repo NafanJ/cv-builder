@@ -7,18 +7,24 @@ function PersonalDetailsSection({email, fullName, phoneNumber, address }) {
     <div className="personal-info">
       <h1 className="resume-name">{fullName}</h1>
       <div className="contact-info">
-        <div>
+        {email && (
+          <div>
             <FontAwesomeIcon icon={faEnvelope} />
             <span>{email}</span>
-        </div>
-        <div>
+          </div>
+        )}
+        {phoneNumber && (
+          <div>
             <FontAwesomeIcon icon={faPhone} />
             <span>{phoneNumber}</span>
-        </div>
-        <div>
+          </div>
+        )}
+        {address && (
+          <div>
             <FontAwesomeIcon icon={faLocationDot} />
             <span>{address}</span>
-        </div>
+          </div>
+        )}
       </div>
     </div>
   );
