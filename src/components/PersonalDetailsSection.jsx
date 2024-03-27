@@ -1,3 +1,4 @@
+import "../styles/PersonalDetailsSection.css"
 function PersonalDetailsSection({email, fullName, phoneNumber, address }) {
   return (
     <div className="personal-info">

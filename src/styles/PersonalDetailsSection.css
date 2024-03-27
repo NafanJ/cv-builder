@@ -1,0 +1,15 @@
+.resume-name{
+    text-align: center;
+}
+
+.personal-info{
+    background-color: #0e374e;
+    color: white;
+    padding: 1rem;
+}
+
+.contact-info{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
