@@ -5,12 +5,20 @@ import Resume from './components/Resume.jsx'
 import PersonalDetails from "./components/PersonalDetails";
 
 function App() {
-  const [personalInfo, setPersonalInfo] = useState({
+
+  const exampleData = {
     fullName: "Neil Gaiman",
     email: "neil.gaiman@mail.co.uk",
     phoneNumber: "+44 781 156 523",
     address: "London, UK",
-  });
+    degree: "Bachelors in Economics",
+    school: "London City University",
+    location: "New York City, US",
+    startDate: "08/2018",
+    endDate: "present",
+    }
+
+  const [personalInfo, setPersonalInfo] = useState(exampleData);
 
   function handlePersonalInfoChange(e) {
     const { key } = e.target.dataset;
@@ -18,9 +26,24 @@ function App() {
   }
 
   return (
-    <>
       <div className="app">
         <div className="CvForm">
+        <button className="button" onClick={() => 
+          setPersonalInfo({
+            fullName: "",
+            email: "",
+            phoneNumber: "",
+            address: "",
+            degree: "",
+            school: "",
+            location: "",
+            startDate: "",
+            endDate: "",
+          })
+        }>Clear</button>
+        <button className="button" onClick={() => 
+          setPersonalInfo(exampleData)
+        }>Load Example Data</button>
           <PersonalDetails
             onChange={handlePersonalInfoChange}
             fullName={personalInfo.fullName}
@@ -33,7 +56,6 @@ function App() {
           personalDetails={personalInfo}
         />
       </div>
-    </>
   )
 }
 
