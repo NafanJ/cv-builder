@@ -2,6 +2,7 @@ import "../styles/PersonalDetailsSection.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import GitHubLink from './GitHubLink'
 
 function PersonalDetailsSection({email, fullName, phoneNumber, github }) {
   return (
@@ -22,7 +23,7 @@ function PersonalDetailsSection({email, fullName, phoneNumber, github }) {
         {github && (
           <div>
             <FontAwesomeIcon icon={faGithub} />
-            <span>{github}</span>
+            <GitHubLink githubUsername={github}/>
           </div>
         )}
       </div>

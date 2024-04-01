@@ -11,7 +11,7 @@ function App() {
     fullName: "Nathan Joel",
     email: "nathanjoeldev@gmail.com",
     phoneNumber: "+44 7519 197540",
-    github: "https://github.com/NafanJ",
+    github: "NafanJ",
     degree: "Software Engineering with Placement (BEng)",
     school: "Queen's University Belfast",
     location: "Belfast, UK",

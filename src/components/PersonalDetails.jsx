@@ -35,8 +35,8 @@ function PersonalDetails({ onChange, email, fullName, phoneNumber, github }) {
       <InputGroup
         type="text"
         id="github"
-        labelText="Github"
-        placeholder="/github"
+        labelText="Github Username"
+        placeholder="Username"
         value={github}
         onChange={onChange}
         data-key="github"

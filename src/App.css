@@ -16,6 +16,11 @@
   gap: 1rem;
 }
 
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 .button{
   align-items: center;
   appearance: none;
