@@ -7,6 +7,7 @@ function Resume(personalInfo, educationDetails, professionalExperience) {
     <div className="resume-container">
         <PersonalDetailsSection
             fullName={personalInfo.personalDetails.fullName}
+            jobTitle={personalInfo.personalDetails.jobTitle}
             email={personalInfo.personalDetails.email}
             phoneNumber={personalInfo.personalDetails.phoneNumber}
             github={personalInfo.personalDetails.github}

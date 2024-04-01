@@ -9,6 +9,7 @@ function App() {
 
   const exampleData = {
     fullName: "Nathan Joel",
+    jobTitle: "Software Engineer",
     email: "nathanjoeldev@gmail.com",
     phoneNumber: "+44 7519 197540",
     github: "NafanJ",
@@ -32,6 +33,7 @@ function App() {
         <button className="button" onClick={() => 
           setPersonalInfo({
             fullName: "",
+            jobTitle: "",
             email: "",
             phoneNumber: "",
             github: "",
@@ -48,6 +50,7 @@ function App() {
           <PersonalDetails
             onChange={handlePersonalInfoChange}
             fullName={personalInfo.fullName}
+            jobTitle={personalInfo.jobTitle}
             email={personalInfo.email}
             phoneNumber={personalInfo.phoneNumber}
             github={personalInfo.github}

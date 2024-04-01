@@ -1,7 +1,7 @@
 import InputGroup from "./InputGroup";
 import "../styles/PersonalDetails.css"
 
-function PersonalDetails({ onChange, email, fullName, phoneNumber, github }) {
+function PersonalDetails({ onChange, fullName, jobTitle, email, phoneNumber, github }) {
   return (
     <form className="personal-details">
       <h2>Personal Details</h2>
@@ -13,6 +13,15 @@ function PersonalDetails({ onChange, email, fullName, phoneNumber, github }) {
         value={fullName}
         onChange={onChange}
         data-key="fullName"
+      />
+      <InputGroup
+        type="text"
+        id="job"
+        labelText="Job Title"
+        placeholder="Job Title"
+        value={jobTitle}
+        onChange={onChange}
+        data-key="jobTitle"
       />
       <InputGroup
         type="email"

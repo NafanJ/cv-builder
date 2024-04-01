@@ -4,7 +4,7 @@ import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import GitHubLink from './GitHubLink'
 
-function PersonalDetailsSection({email, fullName, phoneNumber, github }) {
+function PersonalDetailsSection({fullName, jobTitle, email, phoneNumber, github }) {
   return (
     <div className="personal-info">
       <div className="contact-info">
@@ -27,7 +27,10 @@ function PersonalDetailsSection({email, fullName, phoneNumber, github }) {
           </div>
         )}
       </div>
-      <h1 className="resume-name">{fullName}</h1>
+      <div className="candidate-details">
+        <h1>{fullName}</h1>
+        <h3>{jobTitle}</h3>
+      </div>
     </div>
   );
 }
