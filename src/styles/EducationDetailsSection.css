@@ -1,0 +1,10 @@
+.education{
+    padding-left: 7mm;
+    padding-right: 7mm;
+}
+
+.education-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
