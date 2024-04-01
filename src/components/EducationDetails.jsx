@@ -1,9 +1,9 @@
-import React, { useState } from 'react'; // Import useState from React
+import React, { useState } from 'react';
 import InputGroup from "./InputGroup";
 import "../styles/EducationDetails.css";
 
 function EducationDetails({ onChange, school, degree, startDate, endDate, location }) {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {
     setIsVisible(!isVisible);
