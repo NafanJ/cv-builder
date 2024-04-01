@@ -1,6 +1,7 @@
 import "../styles/PersonalDetailsSection.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faPhone, faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 function PersonalDetailsSection({email, fullName, phoneNumber, github }) {
   return (
@@ -20,7 +21,7 @@ function PersonalDetailsSection({email, fullName, phoneNumber, github }) {
         )}
         {github && (
           <div>
-            <FontAwesomeIcon icon={faLocationDot} />
+            <FontAwesomeIcon icon={faGithub} />
             <span>{github}</span>
           </div>
         )}

@@ -5,7 +5,8 @@
 .personal-info{
     background-color: rgb(12, 56, 96);;
     color: white;
-    padding: 1rem;
+    padding: 7mm;
+    padding-bottom: 20px;
 }
 
 .contact-info{
