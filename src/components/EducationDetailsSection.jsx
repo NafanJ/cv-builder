@@ -19,9 +19,6 @@ function EducationDetailsSection({school, degree, startDate, endDate, location }
       {degree && (
             <span>{degree}</span>
         )}
-        {location && (
-            <span>{location}</span>
-        )}
     </div>
   );
 }
