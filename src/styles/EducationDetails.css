@@ -1,13 +1,23 @@
-.education-details{
+.education-details {
     background-color: white;
     padding: 1rem;
     border-radius: 1rem;
 }
 
-.education-details-header{
+.education-details-header {
     display: flex;
     gap: 5px;
     align-items: center;
+}
+
+.form-content {
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+    max-height: 500px;
+}
+
+.collapsed {
+    max-height: 0;
 }
 
 .arrow-button {
@@ -16,9 +26,9 @@
     background-color: transparent;
     cursor: pointer;
     font-size: 24px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.4s ease-in-out;
 }
-  
+
 .rotate {
     transform: rotate(180deg);
 }

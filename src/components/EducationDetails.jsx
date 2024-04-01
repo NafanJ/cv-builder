@@ -3,10 +3,8 @@ import InputGroup from "./InputGroup";
 import "../styles/EducationDetails.css";
 
 function EducationDetails({ onChange, school, degree, startDate, endDate, location }) {
-  // State to toggle the visibility of the input fields
   const [isVisible, setIsVisible] = useState(true);
 
-  // Function to toggle the isVisible state
   const toggleVisibility = () => {
     setIsVisible(!isVisible);
   };
@@ -24,7 +22,7 @@ function EducationDetails({ onChange, school, degree, startDate, endDate, locati
           ▼
         </button>
       </div>
-      {isVisible && (
+      <div className={`form-content ${isVisible ? 'expanded' : 'collapsed'}`}>
         <>
           <InputGroup
             type="text"
@@ -63,7 +61,7 @@ function EducationDetails({ onChange, school, degree, startDate, endDate, locati
             data-key="endDate"
           />
         </>
-      )}
+        </div>
     </form>
   );
 }
