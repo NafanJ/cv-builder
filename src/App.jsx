@@ -11,7 +11,7 @@ function App() {
     fullName: "Nathan Joel",
     email: "nathanjoeldev@gmail.com",
     phoneNumber: "+44 7519 197540",
-    address: "Belfast, UK",
+    github: "https://github.com/NafanJ",
     degree: "Software Engineering with Placement (BEng)",
     school: "Queen's University Belfast",
     location: "Belfast, UK",
@@ -34,7 +34,7 @@ function App() {
             fullName: "",
             email: "",
             phoneNumber: "",
-            address: "",
+            github: "",
             degree: "",
             school: "",
             location: "",
@@ -50,7 +50,7 @@ function App() {
             fullName={personalInfo.fullName}
             email={personalInfo.email}
             phoneNumber={personalInfo.phoneNumber}
-            address={personalInfo.address}
+            github={personalInfo.github}
           />
           <EducationDetails
             onChange={handlePersonalInfoChange}

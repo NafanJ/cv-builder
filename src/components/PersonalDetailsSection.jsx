@@ -2,10 +2,9 @@ import "../styles/PersonalDetailsSection.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 
-function PersonalDetailsSection({email, fullName, phoneNumber, address }) {
+function PersonalDetailsSection({email, fullName, phoneNumber, github }) {
   return (
     <div className="personal-info">
-      <h1 className="resume-name">{fullName}</h1>
       <div className="contact-info">
         {email && (
           <div>
@@ -19,13 +18,14 @@ function PersonalDetailsSection({email, fullName, phoneNumber, address }) {
             <span>{phoneNumber}</span>
           </div>
         )}
-        {address && (
+        {github && (
           <div>
             <FontAwesomeIcon icon={faLocationDot} />
-            <span>{address}</span>
+            <span>{github}</span>
           </div>
         )}
       </div>
+      <h1 className="resume-name">{fullName}</h1>
     </div>
   );
 }

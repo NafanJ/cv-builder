@@ -9,7 +9,7 @@ function Resume(personalInfo, educationDetails, professionalExperience) {
             fullName={personalInfo.personalDetails.fullName}
             email={personalInfo.personalDetails.email}
             phoneNumber={personalInfo.personalDetails.phoneNumber}
-            address={personalInfo.personalDetails.address}
+            github={personalInfo.personalDetails.github}
         />
         <EducationDetailsSection
             school={personalInfo.personalDetails.school}
