@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import InputGroup from "./InputGroup";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import "../styles/EducationDetails.css";
 
 function EducationDetails({ onChange, school, degree, startDate, endDate, location }) {
@@ -17,9 +19,8 @@ function EducationDetails({ onChange, school, degree, startDate, endDate, locati
           type="button"
           onClick={toggleVisibility}
           className={`arrow-button ${isVisible ? 'rotate' : ''}`}
-          aria-label="Toggle Details"
-        >
-          ▼
+          aria-label="Toggle Details">
+            <FontAwesomeIcon icon={faChevronDown} />
         </button>
       </div>
       <div className={`form-content ${isVisible ? 'expanded' : 'collapsed'}`}>
