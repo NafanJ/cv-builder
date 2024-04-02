@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import InputGroup from "./InputGroup";
+import TagInput from "./TagInput";
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import "../styles/EducationDetails.css";
 
-function EducationDetails({ onChange, school, degree, startDate, endDate, location }) {
+function EducationDetails({ onChange, school, degree, startDate, endDate, location, tags, addTag, removeTag }) {
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {
@@ -61,6 +63,7 @@ function EducationDetails({ onChange, school, degree, startDate, endDate, locati
             onChange={onChange}
             data-key="endDate"
           />
+          <TagInput tags={tags} addTag={addTag} removeTag={removeTag} />
         </>
         </div>
     </form>

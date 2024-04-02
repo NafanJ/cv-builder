@@ -1,7 +1,7 @@
-import { useState } from 'react'
-import './App.css'
-import CvForm from './components/CvForm.jsx'
-import Resume from './components/Resume.jsx'
+import { useState } from 'react';
+import './App.css';
+import CvForm from './components/CvForm.jsx';
+import Resume from './components/Resume.jsx';
 import PersonalDetails from "./components/PersonalDetails";
 import EducationDetails from "./components/EducationDetails";
 
@@ -18,7 +18,8 @@ function App() {
     location: "Belfast, UK",
     startDate: "Sept '17",
     endDate: "Jun '21",
-    }
+    tags: ["Object Oriented Programming", "Databases", "Software Testing", "Video Analytics and Machine Learning"],
+  }
 
   const [personalInfo, setPersonalInfo] = useState(exampleData);
 
@@ -26,6 +27,19 @@ function App() {
     const { key } = e.target.dataset;
     setPersonalInfo({ ...personalInfo, [key]: e.target.value });
   }
+
+  const addTag = (newTag) => {
+    if (!personalInfo.tags.includes(newTag)) {
+      setPersonalInfo({ ...personalInfo, tags: [...personalInfo.tags, newTag] });
+    }
+  };
+
+  const removeTag = (tagIndex) => {
+    setPersonalInfo({
+      ...personalInfo,
+      tags: personalInfo.tags.filter((_, index) => index !== tagIndex),
+    });
+  };
 
   return (
       <div className="app">
@@ -41,7 +55,8 @@ function App() {
             school: "",
             location: "",
             startDate: "",
-            endDate: "",
+            endDate: "", 
+            tags: [], 
           })
         }>Clear</button>
         <button className="button" onClick={() => 
@@ -62,13 +77,16 @@ function App() {
             startDate={personalInfo.startDate}
             endDate={personalInfo.endDate}
             location={personalInfo.location}
+            tags={personalInfo.tags} 
+            addTag={addTag} 
+            removeTag={removeTag}
           />
         </div>
-        < Resume 
-          personalDetails={personalInfo}
+        <Resume 
+        personalDetails={personalInfo}
         />
       </div>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -9,6 +9,7 @@ function InputGroup({
   optional,
   recommended,
   "data-key": dataKey,
+  onKeyDown,
 }) {
   return (
     <div className="input-group">
@@ -25,6 +26,7 @@ function InputGroup({
           onChange={onChange}
           value={value}
           data-key={dataKey}
+          onKeyDown={onKeyDown}
         ></textarea>
       ) : (
         <input
@@ -34,6 +36,7 @@ function InputGroup({
           onChange={onChange}
           value={value}
           data-key={dataKey}
+          onKeyDown={onKeyDown}
         />
       )}
     </div>

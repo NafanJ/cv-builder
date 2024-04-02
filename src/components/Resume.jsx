@@ -18,6 +18,7 @@ function Resume(personalInfo, educationDetails, professionalExperience) {
             startDate={personalInfo.personalDetails.startDate}
             endDate={personalInfo.personalDetails.endDate}
             location={personalInfo.personalDetails.location}
+            tags={personalInfo.personalDetails.tags}
         />
     </div>
     );
