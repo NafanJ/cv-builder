@@ -15,6 +15,7 @@ function Resume(personalInfo, educationDetails, professionalExperience) {
         <EducationDetailsSection
             school={personalInfo.personalDetails.school}
             degree={personalInfo.personalDetails.degree}
+            classification={personalInfo.personalDetails.classification}
             startDate={personalInfo.personalDetails.startDate}
             endDate={personalInfo.personalDetails.endDate}
             location={personalInfo.personalDetails.location}

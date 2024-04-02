@@ -13,8 +13,9 @@ function App() {
     email: "nathanjoeldev@gmail.com",
     phoneNumber: "+44 7519 197540",
     github: "NafanJ",
-    degree: "Software Engineering with Placement (BEng)",
     school: "Queen's University Belfast",
+    degree: "Software Engineering with Placement (BEng)",
+    classification: "First Class Honours",
     location: "Belfast, UK",
     startDate: "Sept '17",
     endDate: "Jun '21",
@@ -52,6 +53,7 @@ function App() {
             phoneNumber: "",
             github: "",
             degree: "",
+            classification: "",
             school: "",
             location: "",
             startDate: "",
@@ -74,6 +76,7 @@ function App() {
             onChange={handlePersonalInfoChange}
             school={personalInfo.school}
             degree={personalInfo.degree}
+            classification={personalInfo.classification}
             startDate={personalInfo.startDate}
             endDate={personalInfo.endDate}
             location={personalInfo.location}

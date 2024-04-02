@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import "../styles/EducationDetails.css";
 
-function EducationDetails({ onChange, school, degree, startDate, endDate, location, tags, addTag, removeTag }) {
+function EducationDetails({ onChange, school, degree, classification, startDate, endDate, location, tags, addTag, removeTag }) {
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {
@@ -44,6 +44,15 @@ function EducationDetails({ onChange, school, degree, startDate, endDate, locati
             value={degree}
             onChange={onChange}
             data-key="degree"
+          />
+          <InputGroup
+            type="text"
+            id="classification"
+            labelText="Classification"
+            placeholder="Enter final grade"
+            value={classification}
+            onChange={onChange}
+            data-key="classification"
           />
           <InputGroup
             type="text"
