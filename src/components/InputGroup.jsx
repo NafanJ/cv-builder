@@ -10,6 +10,7 @@ function InputGroup({
   recommended,
   "data-key": dataKey,
   onKeyDown,
+  maxLength
 }) {
   return (
     <div className="input-group">
@@ -37,6 +38,7 @@ function InputGroup({
           value={value}
           data-key={dataKey}
           onKeyDown={onKeyDown}
+          maxLength={maxLength}
         />
       )}
     </div>

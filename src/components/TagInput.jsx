@@ -32,13 +32,16 @@ function TagInput({ tags, addTag, removeTag }) {
                     onChange={handleInputChange}
                     value={inputValue}
                     onKeyDown={handleKeyDown}
+                    maxLength={35}
                 />
-                {tags.map((tag, index) => (
-                    <div key={index} className="tag-item" >
-                    {tag}
-                    <button type="button" onClick={() => removeTag(index)}><FontAwesomeIcon icon={faX} /></button>
-                    </div>
+                <div className="tags-container">
+                    {tags.map((tag, index) => (
+                        <div key={index} className="tag-item" >
+                        {tag}
+                        <button type="button" onClick={() => removeTag(index)}><FontAwesomeIcon icon={faX} /></button>
+                        </div>
                 ))}
+                </div>
             </div>
         </div>
     );
