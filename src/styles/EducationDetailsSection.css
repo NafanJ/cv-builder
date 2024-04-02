@@ -25,3 +25,17 @@
     color: var(--primary-color);
     margin: 0;
 }
+
+.education-degree{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.education > p{
+    margin-top: 0;
+}
+
+.education > p > span{
+    font-weight: bold;
+}
