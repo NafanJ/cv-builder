@@ -1,0 +1,19 @@
+.tags-input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.tag-item{
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    border: 1px solid black;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.tag-item > button{
+    background-color: white;
+    border-radius: 5rem;
+}
