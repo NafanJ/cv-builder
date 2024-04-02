@@ -1,5 +1,9 @@
+:root{
+  --primary-color: rgb(12, 56, 96);
+}
+
 *{
-  font-family: 'Calibri', sans-serif;
+  font-family: 'Calibri W05 Regular', sans-serif;
 }
 
 .app{
