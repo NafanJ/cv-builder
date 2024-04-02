@@ -28,7 +28,7 @@ function TagInput({ tags, addTag, removeTag }) {
                     id="tag-input"
                     placeholder="Programming 101"
                     type="text"
-                    labelText="Relevant Modules (enter to add)"
+                    labelText="Relevant Modules (max 4)"
                     onChange={handleInputChange}
                     value={inputValue}
                     onKeyDown={handleKeyDown}

@@ -29,7 +29,7 @@ function App() {
   }
 
   const addTag = (newTag) => {
-    if (!personalInfo.tags.includes(newTag)) {
+    if (!personalInfo.tags.includes(newTag) && personalInfo.tags.length < 4) {
       setPersonalInfo({ ...personalInfo, tags: [...personalInfo.tags, newTag] });
     }
   };
