@@ -5,6 +5,5 @@ The CV Generator is a React-based application designed to streamline the process
 
 ## Features
 - **User-Friendly Interface:** Simple and intuitive design makes navigation and CV creation straightforward.
-- **Customizable Templates:** Select from a variety of templates to best match your personal style and professional needs.
 - **Live Preview:** Instantly see how your CV looks as you add or edit information.
-- **Export Options:** Download your CV in PDF format or share it directly through a unique link.
+- **Export Options:** Download your CV in PDF format.
