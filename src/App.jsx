@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import './App.css';
-import CvForm from './components/CvForm.jsx';
 import Resume from './components/Resume.jsx';
 import PersonalDetails from "./components/PersonalDetails";
 import EducationDetails from "./components/EducationDetails";
+{/*import WorkDetails from "./components/WorkDetails";*/}
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
 
@@ -132,6 +132,9 @@ function App() {
           addTag={addTag}
           removeTag={removeTag}
         />
+        {/*<WorkDetails 
+          onChange={handlePersonalInfoChange}
+      />*/}
       </div>
       <Resume
         personalDetails={personalInfo}
