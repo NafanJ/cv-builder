@@ -16,7 +16,7 @@ function EducationDetails({ onChange, school, degree, classification, startDate,
   return (
     <form className="education-details">
       <div className="education-details-header">
-        <h2>Education Details</h2>
+        <h2>Education</h2>
         <button
           type="button"
           onClick={toggleVisibility}
