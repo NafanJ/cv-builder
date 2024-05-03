@@ -18,6 +18,10 @@
     max-height: 650px;
 }
 
+.form-content.expanded > h2{
+    text-align: center;
+}
+
 .collapsed {
     max-height: 0;
 }
