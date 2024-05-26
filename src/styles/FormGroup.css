@@ -1,17 +1,19 @@
-.personal-details {
+.form-group {
     background-color: white;
     padding: 1rem;
     border-radius: 1rem;
     overflow: hidden;
+    width: 300px;
 }
 
-.personal-details-header {
+.form-group-header {
     display: flex;
     justify-content: space-between;
+    gap: 5px;
     align-items: center;
 }
 
-.toggle-button {
+.arrow-button {
     border: none;
     background-color: transparent;
     cursor: pointer;
@@ -25,10 +27,14 @@
 
 .form-content {
     transition: max-height 0.5s ease-out, padding 0.5s ease-out;
-    max-height: 0; /* Start collapsed */
+    max-height: 0; /* Start collapsed Education and Work Experience 2 & 3*/
     overflow: hidden;
 }
 
 .expanded {
     max-height: 1000px;
+}
+
+.collapsed {
+    max-height: 0;
 }

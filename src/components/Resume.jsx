@@ -2,7 +2,7 @@ import PersonalDetailsSection from './PersonalDetailsSection.jsx'
 import EducationDetailsSection from './EducationDetailsSection.jsx'
 import "../styles/Resume.css";
 
-function Resume(personalInfo, educationDetails, professionalExperience) {
+function Resume(personalInfo) {
     return (
     <div className="resume-container">
         <PersonalDetailsSection

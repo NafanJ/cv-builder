@@ -4,7 +4,7 @@ import TagInput from "./TagInput";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import "../styles/EducationDetails.css";
+import "../styles/FormGroup.css";
 
 function EducationDetails({ onChange, school, degree, classification, startDate, endDate, location, tags, addTag, removeTag }) {
   const [isVisible, setIsVisible] = useState(false);
@@ -14,8 +14,8 @@ function EducationDetails({ onChange, school, degree, classification, startDate,
   };
 
   return (
-    <form className="education-details">
-      <div className="education-details-header">
+    <form className="form-group">
+      <div className="form-group-header">
         <h2>Education</h2>
         <button
           type="button"

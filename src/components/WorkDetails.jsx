@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import InputGroup from "./InputGroup";
-import TagInput from "./TagInput";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import "../styles/EducationDetails.css";
+import "../styles/FormGroup.css";
 
 function WorkDetails({ onChange, prevJobTitle}) {
     const [isVisible, setIsVisible] = useState(false);
@@ -14,8 +13,8 @@ function WorkDetails({ onChange, prevJobTitle}) {
     };
 
     return (
-        <form className="education-details">
-            <div className="education-details-header">
+        <form className="form-group">
+            <div className="form-group-header">
                 <h2>Work Experince</h2>
                 <button
                     type="button"

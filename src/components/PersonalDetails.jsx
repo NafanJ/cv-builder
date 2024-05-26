@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import InputGroup from "./InputGroup";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import "../styles/PersonalDetails.css";
+import "../styles/FormGroup.css";
 
 function PersonalDetails({ onChange, fullName, jobTitle, email, phoneNumber, github }) {
   const [isVisible, setIsVisible] = useState(true);
@@ -12,13 +12,13 @@ function PersonalDetails({ onChange, fullName, jobTitle, email, phoneNumber, git
   };
 
   return (
-    <form className="personal-details">
-      <div className="personal-details-header">
+    <form className="form-group">
+      <div className="form-group-header">
         <h2>Personal Details</h2>
         <button
           type="button"
           onClick={toggleVisibility}
-          className={`toggle-button ${isVisible ? 'rotate' : ''}`}
+          className={`arrow-button ${isVisible ? 'rotate' : ''}`}
           aria-label="Toggle Details">
           <FontAwesomeIcon icon={faChevronDown} />
         </button>
