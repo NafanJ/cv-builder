@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import InputGroup from './InputGroup';
 import "../styles/TagInput.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faX } from '@fortawesome/free-solid-svg-icons';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 function TagInput({ tags, addTag, removeTag }) {
     const [inputValue, setInputValue] = useState('');
@@ -36,10 +36,12 @@ function TagInput({ tags, addTag, removeTag }) {
                 />
                 <div className="tags-container">
                     {tags.map((tag, index) => (
-                        <div key={index} className="tag-item" >
-                        {tag}
-                        <button type="button" onClick={() => removeTag(index)}><FontAwesomeIcon icon={faX} /></button>
+                    <div key={index} className="tag-item">
+                    {tag}
+                        <div className="tag-delete" onClick={() => removeTag(index)} style={{ cursor: 'pointer', display: 'inline-block', marginLeft: '8px' }}>
+                            <FontAwesomeIcon icon={faTrash} />
                         </div>
+                    </div>
                 ))}
                 </div>
             </div>

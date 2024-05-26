@@ -14,15 +14,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 0.5rem;
     border: 1px solid black;
     padding: 0.5rem;
     border-radius: 1rem;
     font-size: small;
 }
 
-.tag-item > button{
-    background-color: white;
-    border-radius: 5rem;
-    cursor: pointer;
+.tag-delete:hover {
+    color: red;
 }
